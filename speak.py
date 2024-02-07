@@ -1,9 +1,10 @@
 import socket
 import threading
-import netifaces as ni
 from Crypto.Cipher import AES
 from Crypto import Random
 from Crypto.Util.Padding import pad, unpad
+import psutil
+
 import base64
 
 ss = b'44778645bb4a3bd00aec273a8212fe4c'
@@ -24,14 +25,15 @@ def decrypt_message(encrypted_message, key):
     return unpad(padded_message, AES.block_size).decode()
 
 
+
 def get_non_loopback_ip():
-    for interface in ni.interfaces():
-        if_addresses = ni.ifaddresses(interface)
-        if ni.AF_INET in if_addresses:
-            for address in if_addresses[ni.AF_INET]:
-                if address['addr'] != '127.0.0.1':
-                    return address['addr']
-    return None
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+            s.connect(("8.8.8.8", 80))
+            ip = s.getsockname()[0]
+            return ip
+    except Exception:
+        return None
 
 HOST = get_non_loopback_ip()
 
