@@ -6,9 +6,6 @@ from Crypto import Random
 from Crypto.Util.Padding import pad, unpad
 import base64
 
-import select
-
-
 ss = b'44778645bb4a3bd00aec273a8212fe4c'
 
 
@@ -49,50 +46,25 @@ print(f"Adresse locale: {HOST}")
 PORT = 12345
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-#sock.bind((HOST, PORT))
-sock.bind(('0.0.0.0', PORT))
+sock.bind((HOST, PORT))
 
-
-
-"""def send_message():
+def send_message():
     while True:
         message = input("")
         if message.lower() == 'exit':
             break
         message = encrypt_message(message, ss)
-        sock.sendto(message.encode(), (broadcast_addr, PORT))"""
-
-def send_message():
-    message = input("Entrez votre message (ou 'exit' pour quitter) : ")
-    if message.lower() == 'exit':
-        return False
-    message = encrypt_message(message, ss)
-    sock.sendto(message.encode(), (broadcast_addr, PORT))
-    return True
-
-"""def receive_message():
-    while True:
-        data, addr = sock.recvfrom(1024)
-        print(f"{addr}: {decrypt_message(data.decode(),ss)} ({data.decode()})")"""
+        sock.sendto(message.encode(), (broadcast_addr, PORT))
 
 def receive_message():
-    ready = select.select([sock], [], [], 0)
-    if ready[0]:
+    while True:
         data, addr = sock.recvfrom(1024)
         print(f"{addr}: {decrypt_message(data.decode(),ss)} ({data.decode()})")
 
-
-"""thread_receive = threading.Thread(target=receive_message)
+thread_receive = threading.Thread(target=receive_message)
 thread_receive.start()
 
 send_message()
 thread_receive.join()
-
-sock.close()"""
-
-running = True
-while running:
-    running = send_message()
-    receive_message()
 
 sock.close()
