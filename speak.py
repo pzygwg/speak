@@ -3,12 +3,10 @@ import threading
 from Crypto.Cipher import AES
 from Crypto import Random
 from Crypto.Util.Padding import pad, unpad
-import psutil
-
 import base64
+import struct  # Ajoutez cette ligne
 
 ss = b'44778645bb4a3bd00aec273a8212fe4c'
-
 
 def encrypt_message(message, key):
     iv = Random.new().read(AES.block_size)
@@ -24,7 +22,8 @@ def decrypt_message(encrypted_message, key):
     padded_message = cipher.decrypt(encrypted_message_bytes[AES.block_size:])
     return unpad(padded_message, AES.block_size).decode()
 
-
+MULTICAST_GRP = '224.0.0.1'
+MULTICAST_PORT = 12345
 
 def get_non_loopback_ip():
     try:
@@ -36,19 +35,13 @@ def get_non_loopback_ip():
         return None
 
 HOST = get_non_loopback_ip()
-
-parts = HOST.split('.')
-parts[-1] = '255'
-broadcast_addr = '.'.join(parts)
-
-print(f"Adresse de broadcast: {broadcast_addr}")
 print(f"Adresse locale: {HOST}")
 
-
-PORT = 12345
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-sock.bind((HOST, PORT))
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+sock.bind(('', MULTICAST_PORT))
+mreq = struct.pack("4sl", socket.inet_aton(MULTICAST_GRP), socket.INADDR_ANY)
+sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
 
 def send_message():
     while True:
@@ -56,12 +49,12 @@ def send_message():
         if message.lower() == 'exit':
             break
         message = encrypt_message(message, ss)
-        sock.sendto(message.encode(), (broadcast_addr, PORT))
+        sock.sendto(message.encode(), (MULTICAST_GRP, MULTICAST_PORT))
 
 def receive_message():
     while True:
         data, addr = sock.recvfrom(1024)
-        print(f"{addr}: {decrypt_message(data.decode(),ss)} ({data.decode()})")
+        print(f"{addr}: {decrypt_message(data.decode(), ss)} ({data.decode()})")
 
 thread_receive = threading.Thread(target=receive_message)
 thread_receive.start()
