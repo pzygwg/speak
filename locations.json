@@ -1,0 +1,88 @@
+{
+    "locations": [
+      {
+        "id": 1,
+        "nom": "Aicon 56",
+        "marque": "Aicon",
+        "type": "Yacht",
+        "description": "Prix /semaine \n\nBateau de Luxe 2006 - 57 pieds (17,48 m)\n\nDécouvrez ce bateau d'exception, alliant luxe et performance. Construit en 2006, il mesure 57 pieds (17,48 m) et est équipé pour offrir une expérience de navigation supérieure.\n\nPoints forts:\n- Propulseur d'étrave pour une manœuvre facile.\n- Pilote automatique, pour une navigation détendue.\n- Climatisation pour un confort maximal en toute saison.\n- Générateur garantissant l'autonomie énergétique.\n\nAménagements:\n- 4 cabines luxueuses offrant 7 couchages confortables.\n- 4 douches et 4 toilettes, assurant confort et intimité.\n- Motorisation 2x1065cv, combinant puissance et fiabilité.\n\nParfait pour ceux cherchant une embarcation de prestige pour des voyages inoubliables.",
+        "prix": 8100,
+        "places": 7,
+        "image": "https://www.theglobesailor.com/doc/boat/model/1923/aicon-56_header.jpg",
+        "adresse": "23 Boulevard Saint-Michel, 13006 Marseille, France",
+        "geopoint": [49.5723649, 1.9579869]
+      },
+      {
+        "id": 2,
+        "nom": "Maiora 20",
+        "marque": "Maiora",
+        "type": "Yacht",
+        "description": "Prix /semaine \n\nYacht de Prestige 2008/2020 - 68 pieds (20,80 m)\n\nExplorez les mers à bord de ce yacht de prestige, rénové en 2020, qui combine élégance et confort moderne. Avec une longueur de 68 pieds (20,80 m), ce yacht est parfaitement équipé pour des expériences nautiques exceptionnelles.\n\nPoints forts:\n- Climatisation intégrale pour un confort optimal sous toutes les latitudes.\n\nAménagements:\n- 3 cabines spacieuses, offrant 7 couchages luxueux.\n- 2 douches et 2 toilettes, pour garantir le confort et la privacité de chacun.\n- Motorisation performante, assurant puissance et fiabilité pour toutes vos navigations.\n\nCe yacht représente l'alliance parfaite entre performance et luxe, idéal pour ceux qui désirent explorer les eaux avec style et confort.",
+        "prix": 18000,
+        "places": 7,
+        "image": "https://www.theglobesailor.com/doc/charter/boat/49803/photo/maiora-20_308412.jpg",
+        "adresse": "23 Boulevard Saint-Michel, 13006 Marseille, France",
+        "geopoint": [49.5723649, 1.9579869]
+      },
+      {
+        "id": 3,
+        "nom": "MERCEDES Maybach 650",
+        "marque": "Mercedes",
+        "type": "Voiture",
+        "description": "Prix /jour \n\nMercedes-Maybach 650. Ce nom, à lui seul, représente le summum de l'exclusivité. Avec 207 mm de plus que la Classe S Limousine, la Mercedes-Maybach Classe S affiche clairement sa souveraineté. Et pour cause, elle est « l'ambassadeur du raffinement absolu » selon le PDG du groupe Daimler. En ce qui concerne l’intérieur, l'habitacle concilie avec brio atmosphère de bien-être luxueuse et environnement de travail harmonieux. Une attention toute particulière est accordée avant tout aux passagers installés à l'arrière comme en témoignent l'espace supplémentaire aux jambes et les équipements exclusifs tels que le toit ouvrant panoramique en deux parties ou les luxueux sièges Executive.",
+        "prix": 1300,
+        "places": 5,
+        "image": "https://aaarentcars.com/File/api/m/i?s=V&i=229B901F-5A90-448F-92C5-1F91CBBD4784",
+        "adresse": "8 Avenue de la République, 33000 Bordeaux, France",
+        "geopoint": [44.8400929, -0.5998345]
+      },
+      {
+        "id": 4,
+        "nom": "FERRARI 458 SPECIALE",
+        "marque": "Ferrari",
+        "type": "Voiture",
+        "description": "Prix /jour \n\nUne des grosses nouveautés du salon de Frankfort est la Ferrari 458 Speciale. Cette nouvelle Ferrari adopte une version modifiée du moteur V8 de la 458 Italia. La puissance est portée à 607 ch ce qui en fait le V8 le plus puissant dans l’histoire du constructeur Ferrari. Selon Ferrari, il faut seulement 3 secondes pour atteindre les 100 km/h et 9 secondes pour atteindre les 200 km/h. D’un point de vue stylistique et aérodynamique, le design de cette nouvelle Ferrari 458 Speciale se base sur de nouveaux éléments comme de nouveaux pare-chocs avant et arrière, un nouveau capot, de nouveaux échappements et un nouveau diffuseur. Elle se distingue aussi par une bande optionnelle qui parcoure l’intégralité de la carrosserie.",
+        "prix": 2500,
+        "places": 2,
+        "image": "https://aaarentcars.com/File/api/m/i?s=V&i=59C4AC75-980E-4BA3-8690-1538225EFC0D",
+        "adresse": "12 Rue des Lilas, 75014 Paris, France",
+        "geopoint": [48.8787009, 2.3961094]
+      },
+      {
+        "id": 5,
+        "nom": "LAMBORGHINI HURACAN PERFORMANTE SPYDER",
+        "marque": "Lamborghini",
+        "type": "Voiture",
+        "description": "Prix /jour \n\nAvant le dévoilement officiel, Lamborghini a annoncé avoir battu le record du tour du Nürburgring avec la nouvelle Lamborghini Huracán Performante. Lamborghini a réussi à développer encore plus de puissance de son 5,2 litres atmosphérique V-10, qui fait ici 640 chevaux à 8000 tr / min et 443 lb-pi de couple à 6500 tr / min, contre 602 et 413 dans la norme Huracán. La nouvelle Lamborghini Huracán Performante utilise une structure en aluminium et en fibre de carbone, tandis que les panneaux de carrosserie sont en aluminium et la technologie de fibre de carbone Forged Composite de Lamborghini. La suspension est globalement plus rigide de 10%, affirme Lamborghini, avec une rigidité améliorée de 15% et des coussinets plus rigides sur les supports de suspension pour réduire la conformité. La Performante utilise une traction intégrale à contrôle électronique avec un différentiel arrière à glissement limité et roule sur des roues forgées de 20 pouces enveloppées dans des pneus Pirelli P Zero Corsa développés pour cette voiture.",
+        "prix": 2400,
+        "places": 2,
+        "image": "https://aaarentcars.com/File/api/m/i?s=V&i=95EC3726-E29A-4E0F-8BFF-158E56B5BD36",
+        "adresse": "5 Place du Capitole, 31000 Toulouse, France",
+        "geopoint": [43.6037802, 1.4434455]
+      },
+      {
+        "id": 6,
+        "nom": "Robinson R44",
+        "marque": "Robinson",
+        "type": "Helicoptère",
+        "description": "Prix /heure \n\nLe Robinson R44, un hélicoptère léger reconnu pour sa fiabilité et sa polyvalence, est le choix idéal pour les pilotes privés et commerciaux. Conçu pour offrir une expérience de vol exceptionnelle, il combine performance, confort et efficacité à un coût opérationnel réduit.\n\nPoints forts:\n- Cabine spacieuse pouvant accueillir jusqu'à 3 passagers, en plus du pilote.\n- Système de contrôle de vol avancé, assurant une maniabilité et une stabilité exceptionnelles.\n- Motorisation puissante, garantissant d'excellentes performances en vol, y compris dans les conditions les plus exigeantes.\n\nQue ce soit pour le travail aérien, l'entraînement de pilotes, ou simplement le plaisir de voler, le Robinson R44 se distingue par son efficacité et son confort, offrant une expérience de vol inégalée.",
+        "prix": 900,
+        "places": 3,
+        "image": "https://golf-tango.com/wp-content/uploads/2019/10/P1000444.jpg",
+        "adresse": "14 Rue de la Liberté, 21000 Dijon, France",
+        "geopoint": [47.3227427, 5.0360092]
+      },
+      {
+        "id": 7,
+        "nom": "Pilatus PC-24",
+        "marque": "Pilatus",
+        "type": "Helicoptère",
+        "description": "Prix /heure \n\nLe Bi-Réacteur Ultime\n\nPrenant le meilleur du best-seller PC-12 pour construire le bi-réacteur idéal, le Pilatus PC-24 représente le pari réussi d'une innovation sans précédent. L'Avion privé vous accompagne dans la location de ce chef-d'œuvre de l'aviation, vous garantissant une expérience hors pair dans les meilleures conditions.\n\nPerformances:\n- Distance franchissable : 2000 NM / 3704 km, permettant de couvrir de longues distances sans escale.\n- Vitesse maximale impressionnante de 440 kt / 814 km/h, réduisant significativement le temps de voyage.\n- Capacité d'accueil confortable jusqu'à 9 passagers, idéale pour les déplacements en groupe ou en famille.\n- Performances de décollage et d'atterrissage exceptionnelles, nécessitant seulement 820 m et 770 m respectivement, offrant une grande flexibilité d'accès à une multitude d'aéroports.\n\nLe Pilatus PC-24 est le choix par excellence pour ceux qui recherchent performance, confort et efficacité dans un avion privé.",
+        "prix": 3000,
+        "places": 9,
+        "image": "https://lavionprive.fr/img/aircraft/pilatus_pc24/pilatus_pc24-alt-opt.jpg",
+        "adresse": "37 Avenue Jean Jaurès, 69007 Lyon, France",
+        "geopoint": [45.750846, 4.8454455]
+      }
+    ]
+  }
