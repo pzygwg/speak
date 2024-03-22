@@ -10,7 +10,8 @@
         "places": 7,
         "image": "https://www.theglobesailor.com/doc/boat/model/1923/aicon-56_header.jpg",
         "adresse": "23 Boulevard Saint-Michel, 13006 Marseille, France",
-        "geopoint": [49.5723649, 1.9579869]
+        "geopoint": [49.5723649, 1.9579869],
+        "agence" : "Europcar"
       },
       {
         "id": 2,
@@ -22,7 +23,8 @@
         "places": 7,
         "image": "https://www.theglobesailor.com/doc/charter/boat/49803/photo/maiora-20_308412.jpg",
         "adresse": "23 Boulevard Saint-Michel, 13006 Marseille, France",
-        "geopoint": [49.5723649, 1.9579869]
+        "geopoint": [49.5723649, 1.9579869],
+        "agence" : "Europcar"
       },
       {
         "id": 3,
@@ -34,7 +36,8 @@
         "places": 5,
         "image": "https://aaarentcars.com/File/api/m/i?s=V&i=229B901F-5A90-448F-92C5-1F91CBBD4784",
         "adresse": "8 Avenue de la République, 33000 Bordeaux, France",
-        "geopoint": [44.8400929, -0.5998345]
+        "geopoint": [44.8400929, -0.5998345],
+        "agence" : "Europcar"
       },
       {
         "id": 4,
@@ -46,7 +49,8 @@
         "places": 2,
         "image": "https://aaarentcars.com/File/api/m/i?s=V&i=59C4AC75-980E-4BA3-8690-1538225EFC0D",
         "adresse": "12 Rue des Lilas, 75014 Paris, France",
-        "geopoint": [48.8787009, 2.3961094]
+        "geopoint": [48.8787009, 2.3961094],
+        "agence" : "Rent-A-Car"
       },
       {
         "id": 5,
@@ -58,7 +62,8 @@
         "places": 2,
         "image": "https://aaarentcars.com/File/api/m/i?s=V&i=95EC3726-E29A-4E0F-8BFF-158E56B5BD36",
         "adresse": "5 Place du Capitole, 31000 Toulouse, France",
-        "geopoint": [43.6037802, 1.4434455]
+        "geopoint": [43.6037802, 1.4434455],
+        "agence" : "Europcar"
       },
       {
         "id": 6,
@@ -70,7 +75,8 @@
         "places": 3,
         "image": "https://golf-tango.com/wp-content/uploads/2019/10/P1000444.jpg",
         "adresse": "14 Rue de la Liberté, 21000 Dijon, France",
-        "geopoint": [47.3227427, 5.0360092]
+        "geopoint": [47.3227427, 5.0360092],
+        "agence" : "Europcar"
       },
       {
         "id": 7,
@@ -82,7 +88,8 @@
         "places": 9,
         "image": "https://lavionprive.fr/img/aircraft/pilatus_pc24/pilatus_pc24-alt-opt.jpg",
         "adresse": "37 Avenue Jean Jaurès, 69007 Lyon, France",
-        "geopoint": [45.750846, 4.8454455]
+        "geopoint": [45.750846, 4.8454455],
+        "agence" : "Europcar"
       }
     ]
   }
